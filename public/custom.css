@@ -1,0 +1,40 @@
+.w-full.top-menu.bg-blue-500.border-b-2.border-b-slate-300 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: aliceblue;
+  z-index: 999999;
+}
+
+.w-full.top-menu.scroll-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #ccc;
+  /* border-bottom: 2px solid blue; */
+}
+
+.top-menu.scroll-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid red;
+  background-color: blue;
+  top: 0;
+  transition: 0.5s;
+  color: aliceblue;
+}
+
+.top-menu.scroll-header a {
+  color: #dacbe9;
+  background: transparent;
+  border: 2px solid #999;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.w-full.h-\[650px\].bg-no-repeat.bg-center.bg-cover.object-fill {
+  background-size: contain;
+  object-fit: cover;
+  background-position: bottom bottom;
+}

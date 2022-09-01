@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Css</title>
+    <link rel="stylesheet" href="./public/style.css">
+   
+</head>
+<body class="bg-gray-300">
+    <!-- <header class="bg-blue-600">
+        <div>
+            Logo
+        </div>
+        <nav class="bg-orange-600 flex-shrink-0">
+            <ul class="block">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Protfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header> -->
+  
+    
+    <div class="bg-gray-100 grid lg:grid-cols-2">
+
+        <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full ">    
+            <img class="h-10" src="img/logo.png" alt="">
+            <img class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover object-center lg:hidden" src="img/jaflong3.jpg" alt="">
+            <h1 class="mt-6 text-2xl font-bold text-gray-800 sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">You can work from anywhere.
+                <br class="hidden lg:inline"/>
+                 <span class="text-indigo-500">Take advantage of it.</span></h1>
+            <p class="mt-2 text-gray-500 sm:mt-4 sm:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, dolor at.
+                 Et nostrum magni ea in, voluptates minus deleniti provident incidunt pariatur ex!
+                  Dicta eveniet quaerat, cupiditate ipsum optio sequi?</p>
+                  <div class="mt-4 sm:mt-6">
+                    <a href="" class="inline-blok px-5 py-3 rounded-lg shadow-lg bg-indigo-700 text-white uppercase tracking-wider font-semibold text-sm sm:text-base hover:bg-indigo-400 hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-600 focus:ring-opacity-50 active:bg-red-500 transform hover:scale-150 transition ease-in-out duration-500 ">book your escape</a>
+                  </div>
+        </div>
+        
+        <div class="hidden lg:block relative">
+            <img class="absolute inset-0 w-full h-full object-cover object-center" src="img/jaflong3.jpg" alt="">
+        </div>
+    </div>
+
+ 
+    <div class="grid grid-cols-3">
+        <!-- box -->
+        <div class="bg-blue-600 p-6 text-justify row-span-2">
+            <h2 class="text">Box1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Minus dignissimos vitae nulla esse totam, quas eum tenetur
+            ipsum distinctio culpa, necessitatibus harum deleniti
+            quisquam earum? Odio fuga inventore dolor sunt.</p>
+        </div>
+        <div class="bg-purple-600 p-6 text-justify col-span-2">
+            <h2 class="text">Box2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Minus dignissimos vitae nulla esse totam, quas eum tenetur
+            ipsum distinctio culpa, necessitatibus harum deleniti
+            quisquam earum? Odio fuga inventore dolor sunt.</p>
+        </div>
+        <div class="bg-indigo-200 h-64 p-6 text-justify">
+            <h2 class="text">Box3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Minus dignissimos vitae nulla esse totam, quas eum tenetur
+            ipsum distinctio culpa, necessitatibus harum deleniti
+            quisquam earum? Odio fuga inventore dolor sunt.</p>
+        </div>
+        <div class="bg-red-400 p-6 text-justify row-span-2">
+            <h2 class="text">Box4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Minus dignissimos vitae nulla esse totam, quas eum tenetur
+            ipsum distinctio culpa, necessitatibus harum deleniti
+            quisquam earum? Odio fuga inventore dolor sunt.</p>
+        </div>
+        <div class="bg-green-300  p-6 text-justify ">
+            <h2 class="text">Box4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Minus dignissimos vitae nulla esse totam, quas eum tenetur
+            ipsum distinctio culpa, necessitatibus harum deleniti
+            quisquam earum? Odio fuga inventore dolor sunt.</p>
+        </div>
+        <div class="bg-[#00ACC1]  p-6 text-justify bg-cover object-cover object-center opacity-60  hover:opacity-100" style="background-image: url('img/inter-chenge.jpg')">
+            <h2 class="text">Box5</h2>
+            <p class="text-white opacity-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Minus dignissimos vitae nulla esse totam, quas eum tenetur
+            ipsum distinctio culpa, necessitatibus harum deleniti
+            quisquam earum? Odio fuga inventore dolor sunt.</p>
+        </div>
+        <!-- box -->
+    </div>
+
+    <!-- card  -->
+    <div class="bg-gray-700 h-auto w-64 mx-auto m-6">
+        <div class="bg-gray-500 p-2 text-white">Header</div>
+        <div class="overflow-auto">
+            <div class="h-40">
+                <img src="img/03.jpg" alt="">
+            </div>
+            <div class="p-2 mt-6">
+                <h2 class="text-white text-2xl border-b-2 border-b-gray-600 pb-1">Title Colose</h2>
+                <p class="text-gray-400 text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem neque sit deleniti, voluptatum debitis vitae ducimus! Explicabo sit quo neque provident dicta.</p>
+                <div class="mt-2 mb-2 ml-4">
+                    <a href="" class="bg-blue-600 px-4 py-1 leading-3 rounded-lg tracking-wider hover:bg-orange-600 hover:text-white transform hover:scale-105 transition-all duration-500">See Here</a>
+                    <a href="" class="inline-blok px-5 py-1 rounded-lg shadow-lg bg-indigo-700 text-white uppercase tracking-wider font-semibold text-sm sm:text-base">Details</a>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-600 left-0 bottom-0 w-full p-2">footer</div>
+    </div>
+
+    <div class="p-6">
+        <h2>button</h2>
+        <a href="" class="btn m-4 inline-block rounded-md hover:bg-green-800 transform hover:scale-105 transition ease-in-out duration-500 p-2 hover:text-white bg-green-400 ">See More</a>
+        <a href="" class="btn m-4 inline-block rounded-md hover:bg-green-800 transform hover:scale-105 transition ease-in-out duration-500 p-2 hover:text-white bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-cyan-500 hover:to-blue-500">See More</a>
+    </div>
+
+    <div class="bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-center text-white p-6 terxt-lg">My Resume</h2>
+           
+            <div class="flex  gap-4 ml-16 mr-16">
+                <div>
+                    <h2 class="text-lg pb-4 text-white font-semibold">Experiences</h2>
+
+                    <div class="h-[288px] w-[625px]  grid">
+                        <div class="rounded-l-2xl bg-gradient-to-r from-gray-600 to-gray-900 h-10 w-full flex gap-2 items-center" style="background:linear-gradient(90deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%)">
+                            <div class="h-10 w-10 items-center bg-red-500 rounded-full text-white text-lg">
+                                <p class="py-1.5 text-center">01</p>
+                            </div>
+                            <h2 class="text-white text-sm">2014 - now</h2>
+                        </div>
+                        <div class="border-l-[2px] text-bold border-gray-800 ml-5 mt-0 h-[237px]">
+                            <div class="mt-2 ml-7">
+                                <h1 class="text-white font-bold pb-2">Founder & Creative Director</h1>
+                            <h4 class="text-red-500">Kyros Studio</h4>
+                            <p class="text-gray-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="h-[288px] w-[625px]  grid">
+                        <div class="rounded-l-2xl bg-gradient-to-r from-gray-600 to-gray-900 h-10 w-full flex gap-2 items-center" style="background:linear-gradient(90deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%)">
+                            <div class="h-10 w-10 items-center bg-red-500 rounded-full text-white text-lg">
+                                <p class="py-1.5 text-center">02</p>
+                            </div>
+                            <h2 class="text-white text-sm">2010 - 2014</h2>
+                        </div>
+                        <div class="border-l-[2px] text-bold border-gray-800 ml-5 mt-0 h-[237px]">
+                            <div class="mt-2 ml-7">
+                                <h1 class="text-white font-bold pb-2">Senior UI / UX Designer</h1>
+                            <h4 class="text-red-500">Google Inc</h4>
+                            <p class="text-gray-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="h-[288px] w-[625px]  grid">
+                        <div class="rounded-l-2xl bg-gradient-to-r from-gray-600 to-gray-900 h-10 w-full flex gap-2 items-center" style="background:linear-gradient(90deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%)">
+                            <div class="h-10 w-10 items-center bg-red-500 rounded-full text-white text-lg">
+                                <p class="py-1.5 text-center">03</p>
+                            </div>
+                            <h2 class="text-white text-sm">2008 - 2010</h2>
+                        </div>
+                        <div class="border-l-[2px] text-bold border-gray-800 ml-5 mt-0 h-[237px]">
+                            <div class="mt-2 ml-7">
+                                <h1 class="text-white font-bold pb-2">Graphic Designer</h1>
+                            <h4 class="text-red-500">Kyros Studio</h4>
+                            <p class="text-gray-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                </div>
+                <div class="">
+                    <h2 class="text-lg pb-4 text-white font-semibold">Education</h2>
+                    <div class="h-[288px] w-[625px]  grid">
+                        <div class="rounded-l-2xl bg-gradient-to-r from-gray-600 to-gray-900 h-10 w-full flex gap-2 items-center">
+                            <div class="h-10 w-10 -ml-1 bg-red-800  opacity-90 rounded-full text-white text-lg flex items-center justify-center">
+                                <span class="animate-ping absolute inline-flex  w-8 h-8 rounded-full bg-sky-600 opacity-75"></span>
+                                <span class="relative rounded-full h-7 w-7 border-indigo-700 px-[7px] py-1 text-sm">01</span>
+                            </div>
+                            <h2 class="text-white text-sm">2004 - 2008</h2>
+                        </div>
+                        <div class="border-l-[2px] text-bold border-gray-800 ml-5 mt-0 h-[237px]">
+                            <div class="mt-2 ml-7">
+                                <h1 class="text-white font-bold">Master in Design</h1>
+                            <h6 class="text-red-500  font-extralight text-sm">New York University</h6>
+                            <p class="text-gray-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="h-[288px] w-[625px]  grid">
+                        <div class="rounded-l-2xl bg-gradient-to-r from-gray-600 to-gray-900 h-10 w-full flex gap-2 items-center" style="background:linear-gradient(90deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%)">
+                            <div class="h-10 w-10 items-center bg-red-500 rounded-full text-white text-lg">
+                                <p class="py-1.5 text-center">02</p>
+                            </div>
+                            <h2 class="text-white text-sm">2004 - 2008</h2>
+                        </div>
+                        <div class="border-l-[2px] text-bold border-gray-800 ml-5 mt-0 h-[237px]">
+                            <div class="mt-2 ml-7">
+                                <h1 class="text-white font-bold">Bachelor of Arts</h1>
+                                <h6 class="text-red-500  font-extralight text-sm">University of London</h6>
+                            <p class="text-gray-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+            
+                    <div class="h-[288px] w-[625px]  grid mb-10">
+                        <div class="rounded-l-2xl bg-gradient-to-r from-gray-600 to-gray-900 h-10 w-full flex gap-2 items-center text-xs" style="background:linear-gradient(90deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%)">
+                            <div class="h-10 w-10 border-4 border-sky-400  rounded-full text-white flex items-center justify-center">
+                                <span class="animate-ping absolute inline-flex h-10 w-10 rounded-full bg-sky-600"></span>
+                                <span class="relative inline-flex rounded-full h-8 w-8 items-center  border-indigo-700 px-[12px]">03</span>
+                                <!-- <p class="py-1.5 text-center relative inline-flex h-3 w-3">02</p> -->
+                                
+                            </div>
+                            <h2 class="text-white">2010 - 2014</h2>
+                        </div>
+                        <div class="border-l-[2px] text-bold border-gray-800 ml-5 mt-0 h-[237px]">
+                            <div class="mt-2 ml-7">
+                                <h1 class="text-white font-bold">Artist of College</h1>
+                                <h6 class="text-red-500">University of Sydney</h6>
+                            <p class="text-gray-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                            </div>
+
+                            </div>
+                        </div>
+                    
+                    </div>
+             </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-40 mx-auto">
+        <div class="m-6">
+            <div class=" h-40 w-40 bg-red-700 relative mt-10 ml-10">
+                <div class="rotate-45 h-40 w-40 bg-indigo-500 bg-transparent border-2 border-sky-800 absolute">
+                        <img src="img/05.jpg" alt="" class="rounded-full w-full h-full -rotate-45 p-6">
+                </div>
+            </div>
+        </div>
+       
+        <!-- <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="img/05.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div> -->
+    </div>
+   
+</body>
+</html>

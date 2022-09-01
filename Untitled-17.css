@@ -1,0 +1,8 @@
+.bg-gray-100.border-b-4.border-blue-700.sticky.menu {
+  position: fixed;
+  top: 0 initial;
+  right: 0;
+  left: 0;
+  background: bisque;
+  border-bottom: 5px solid red;
+}

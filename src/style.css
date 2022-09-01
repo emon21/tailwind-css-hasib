@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .text {
+    @apply text-white text-3xl pb-2;
+  }
+}

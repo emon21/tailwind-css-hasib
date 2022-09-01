@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <title>Tailwind Css</title>
+    <link rel="stylesheet" href="./public/style.css" />
+    <link rel="stylesheet" href="./public/custom.css" />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-blue-600">
+        <!-- container -->
+        <div class="container flex flex-wrap mx-auto ">
+            <!-- brand -->
+            <a href="" class="inline-flex p-2 text-white text-xl font-bold uppercase tracking-wider">Frontend Ui</a>
+            <!-- toggle btn -->
+            <button class="inline-flex justify-center items-center borderh-10 w-10 text-white rounded-md outline-none focus:outline-none lg:hidden ml-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </button>
+            <!-- toggle btn -->
+            <!-- menu -->
+            <div class="lg:inline-flex lg:w-auto mt-2 lg:mt-0 py-2">
+                <ul class="flex flex-col lg:flex-row">
+                    <li>
+                        <a class="flex px-4 py-2 font-medium text-white rounded-md  hover:bg-blue-800" href="">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="" class="flex px-4 py-2 font-medium rounded-md  text-white hover:bg-blue-800">Project</a>
+                    </li>
+                    <li>
+                        <a href="" class="flex px-4 py-2 font-medium rounded-md  text-white hover:bg-blue-800">News</a>
+                    </li>
+                    <li>
+                        <a href="" class="flex px-4 py-2 font-medium rounded-md  text-white hover:bg-blue-800">Orders</a>
+                    </li>
+                    <li>
+                        <a href="" class="flex px-4 py-2  font-medium rounded-md  text-white hover:bg-blue-800">Invoice</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu -->
+        </div>
+    </nav>
+  </body>
+</html>
