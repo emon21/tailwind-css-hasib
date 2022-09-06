@@ -2,48 +2,140 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <title>Tailwind Css</title>
+    <title>Frontendfunn - Tailwindcss 2.x Vite App</title>
     <link rel="stylesheet" href="./public/style.css" />
     <link rel="stylesheet" href="./public/custom.css" />
+    <style>
+      body {
+        text-align: center;
+      }
+
+      /* Set the style of container
+            div element */
+      .Container {
+        height: 150px;
+        width: 250px;
+        overflow-y: auto;
+        background-color: green;
+        border-radius: 5px;
+        margin: 0 auto;
+      }
+      /* Set the effects to the division
+            named content */
+      .Content {
+        height: 2px;
+        color: white;
+        text-align: center;
+      }
+
+      /* Designing for scroll-bar */
+      ::-webkit-scrollbar {
+        width: 10px;
+        display: block;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: gainsboro;
+        border-radius: 3px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 3px;
+      }
+
+     
+    </style>
   </head>
   <body class="bg-gray-100">
-    <nav class="bg-blue-600">
-        <!-- container -->
-        <div class="container flex flex-wrap mx-auto ">
-            <!-- brand -->
-            <a href="" class="inline-flex p-2 text-white text-xl font-bold uppercase tracking-wider">Frontend Ui</a>
-            <!-- toggle btn -->
-            <button class="inline-flex justify-center items-center borderh-10 w-10 text-white rounded-md outline-none focus:outline-none lg:hidden ml-auto">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-                </svg>
-            </button>
-            <!-- toggle btn -->
-            <!-- menu -->
-            <div class="lg:inline-flex lg:w-auto mt-2 lg:mt-0 py-2">
-                <ul class="flex flex-col lg:flex-row">
-                    <li>
-                        <a class="flex px-4 py-2 font-medium text-white rounded-md  hover:bg-blue-800" href="">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="" class="flex px-4 py-2 font-medium rounded-md  text-white hover:bg-blue-800">Project</a>
-                    </li>
-                    <li>
-                        <a href="" class="flex px-4 py-2 font-medium rounded-md  text-white hover:bg-blue-800">News</a>
-                    </li>
-                    <li>
-                        <a href="" class="flex px-4 py-2 font-medium rounded-md  text-white hover:bg-blue-800">Orders</a>
-                    </li>
-                    <li>
-                        <a href="" class="flex px-4 py-2  font-medium rounded-md  text-white hover:bg-blue-800">Invoice</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- menu -->
+    <div class="bg-gray-600 p-6 text-center">
+      <p class="text-white text-sm text-justify">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+        perferendis. Ea sed in similique earum non. Incidunt aut non, delectus
+        necessitatibus facere aliquam distinctio explicabo, beatae voluptates
+        odio veritatis doloribus.
+      </p>
+    </div>
+    <div>
+      <div
+        class="bg-center h-[650px] w-full object-cover inset-0 bg-no-repeat overflow-hidden"
+        style="background-image: url('img/hans-ott-oxkf_pBlR7o-unsplash.jpg')"
+      >
+        <div class="bg-gray-800 h-full opacity-80 overflow-hidden">
+          <p class="text-white text-lg font-semibold pt-40 text-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            perferendis. Ea sed in similique earum non. Incidunt aut non,
+            delectus necessitatibus facere aliquam distinctio explicabo, beatae
+            voluptates odio veritatis doloribus.
+          </p>
         </div>
-    </nav>
+      </div>
+    </div>
+
+    <div class="min-h-screen flex flex-col- justify-center items-center">
+      <div class="mx-auto p-6">
+        <div class="flex justify-center space-x-10">
+         
+            <img
+              class="rounded-lg w-80 h-80 shadow-xl"
+              src="img/06.jpg"
+              alt=""
+            />
+
+            <img
+              class="rounded-lg w-80 h-80 shadow-xl"
+              src="img/04.jpg"
+              alt=""
+            />
+        
+        </div>
+        <div class="mt-16 flex justify-center spach-x-16">
+            <div class="relative w-80 h-80 max-w-full rounded-lg shadow-2x1 overflow-hidden">
+                <img class="absolute inset-0 w-full h-full object-cover " src="img/building.jpg" alt="">
+                <img class="mix-blend-darken absolute inset-0 w-full h-full object-cover " src="img/Bronze_mesh_wall_lamps_2048x2048.webp" alt="">
+
+            </div>
+
+            <div class="relative w-80 h-80 max-w-full rounded-lg shadow-2x1 overflow-hidden">
+                <img class="absolute inset-0 w-full h-full object-cover " src="img/building.jpg" alt="">
+                <img class="mix-blend-lighten absolute inset-0 w-full h-full object-cover " src="img/Bronze_mesh_wall_lamps_2048x2048.webp" alt="">
+
+            </div>
+
+            <div class="relative w-80 h-80 max-w-full rounded-lg shadow-2x1 overflow-hidden">
+                <img class="absolute inset-0 w-full h-full object-cover " src="img/building.jpg" alt="">
+                <img class="mix-blend-hard-light absolute inset-0 w-full h-full object-cover " src="img/Bronze_mesh_wall_lamps_2048x2048.webp" alt="">
+
+            </div>
+
+        </div>
+
+        
+
+
+      </div>
+    </div>
+    <div class="mx-16 mt-8 h-96 relative">
+      <div class="absolute w-full h-full py-8">
+        <img
+          src="img/06.jpg"
+          alt=""
+          class="h-80 w-full object-cover rounded-2xl"
+        />
+      </div>
+
+      <div class="relative h-full flex overflow-x-scroll">
+        <div class="flex-shrink-0 rounded-2xl w-full"></div>
+        <div
+          class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-grayscale"
+        ></div>
+        <div class="flex-shrink-0 rounded-2xl w-full"></div>
+      </div>
+      <div class="overflow-x-auto"></div>
+    </div>
   </body>
 </html>

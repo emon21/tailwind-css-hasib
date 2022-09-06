@@ -38,3 +38,10 @@
   object-fit: cover;
   background-position: bottom bottom;
 }
+
+.relative.mb-4.rounded-lg.overflow-hidden.hasib {
+    box-shadow: 0px 0px 10px 5px #bbb5b5;
+    overflow: hidden;
+    height: 320px;
+    margin: 10px;
+}

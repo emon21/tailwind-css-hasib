@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MenuBar</title>
+    <link rel="stylesheet" href="./public/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-cyan-400">
+    <nav
+      class="p-5 bg-white shadow md:flex md:justify-between md:items-center z-20 fixed w-full"
+    >
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-[poppins]">
+          <img
+            class="h-10 inline"
+            src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg"
+            alt=""
+          />
+          Tailwind
+        </span>
+        <span class="text-3xl cursor-pointer md:hidden block mx-2">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      <ul
+        class="md:flex md:items-center z-10 md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 px-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 pb-4"
+      >
+        <li class="mx-4 my-6 md:my-0 hover:bg-gray-200">
+          <a
+            href=""
+            class="text-xl hover:text-cyan-700 duration-500 block hover:p-2"
+            >Home</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="" class="text-xl hover:text-cyan-700 duration-500">About</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="" class="text-xl hover:text-cyan-700 duration-500">News</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="" class="text-xl hover:text-cyan-700 duration-500"
+            >Protfolio</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="" class="text-xl hover:text-cyan-700 duration-500"
+            >Contact</a
+          >
+        </li>
+        <button
+          class="bg-cyan-400 text-white mx-4 px-6 py-2 duration-500 hover:bg-cyan-500 p"
+        >
+          Get Started
+        </button>
+      </ul>
+    </nav>
+
+    <div class="bg-indigo-600 h-[550px] relative z-1">
+      <div
+        class="absolute box-1 border-2 border-gray-200 text-center pt-12 text-white h-[550px] w-full bg-amber-600 row-span-2 bg-cover bg-no-repeat bg-center"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1500622944204-b135684e99fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80');
+        "
+      ></div>
+      <div class="mt-32 text-[30px] text-center absolute">
+        <h2 class="text-red-700 text-2xl">Box 1</h2>
+        <p class="text-gray-100">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+          laborum rem! Quos, veritatis laudantium eos dicta magnam mollitia sit
+          officiis. Labore esse asperiores repudiandae ab eos doloremque
+          aliquam, repellendus porro!
+        </p>
+      </div>
+    </div>
+
+    <div class="p-20">
+      <div
+        class="w-96 h-72 bg-indigo-700 p-20 hover:before:content-[''] before:text-sky-300 before:text-4xl hover:after:content-[''] after:text-amber-300 after:text-4xl transition duration-500 after:border-r-2"
+      >
+        <!-- <h1 class="text-4xl text-white">KindaCode.com</h1> -->
+      </div>
+    </div>
+
+    <div class="bg-slate-100 h-full">
+      <div class="container mx-auto p-6">
+        <h2 class="text-indigo-600 text-lg pb-2 text-center">Our Service</h2>
+        <hr class="bg-red-800 border-[1px] w-1/12 mx-auto border-gray-700" />
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+          <!-- card -->
+          <div
+            class="bg-gray-200 sm:max-w-xl hover:drop-shadow-lg transition ease-in-out duration-500 rounded overflow-hidden h-full"
+          >
+            <div class="col-span-3">
+              <img
+                src="img/06.jpg"
+                alt=""
+                class="h-30 w-full transition duration-500 hover:scale-105"
+              />
+            </div>
+            <div class="p-2 mt-4">
+              <h2 class="pb-2 text-gray-800 text-[22px] font-semibold">
+                Thsi is test on Design
+              </h2>
+              <!-- <hr class="border-b-2 border-b-gray-400 w-1/12"> -->
+              <hr class="border-gray-600 w-6/12" />
+              <p class="text-gray-800 text-justify pb-4 pt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur, laborum rem! Quos, veritatis laudantium eos dicta
+                magnam mollitia sit officiis. Labore esse asperiores repudiandae
+                ab eos doloremque aliquam, repellendus porro!
+              </p>
+
+              <button
+                class="w-20 text-sm h-10 bg-transparent border-2 border-gray-600 transition ease-in-out duration-500 transform hover:scale-105 rounded hover:text-white hover:bg-indigo-600 p-2 pb-4"
+              >
+                See Here
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-gray-200 hover:drop-shadow-lg transition ease-in-out duration-500 rounded overflow-hidden h-full"
+          >
+            <div class="col-span-3">
+              <img
+                src="img/06.jpg"
+                alt=""
+                class="h-30 w-full transition duration-500 hover:scale-105"
+              />
+            </div>
+            <div class="p-2 mt-4">
+              <h2 class="pb-2 text-gray-800 text-[22px] font-semibold">
+                Thsi is test on Design
+              </h2>
+              <!-- <hr class="border-b-2 border-b-gray-400 w-1/12"> -->
+              <hr class="border-gray-600 w-6/12" />
+              <p class="text-gray-800 text-justify pb-4 pt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur, laborum rem! Quos, veritatis laudantium eos dicta
+                magnam mollitia sit officiis. Labore esse asperiores repudiandae
+                ab eos doloremque aliquam, repellendus porro!
+              </p>
+
+              <button
+                class="w-20 text-sm h-10 bg-transparent transition ease-in-out duration-500 transform hover:scale-105 rounded hover:text-white hover:bg-indigo-600 p-2 pb-4 focus:outline-none focus:ring focus:ring-pink-500 active:bg-green-800 bg-gray-700"
+              >
+                See Here
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-gray-200 hover:drop-shadow-lg transition ease-in-out duration-500 rounded overflow-hidden h-full"
+          >
+            <div class="col-span-3">
+              <img
+                src="img/06.jpg"
+                alt=""
+                class="h-30 w-full transition duration-500 hover:scale-105"
+              />
+            </div>
+            <div class="p-2 mt-4">
+              <h2 class="pb-2 text-gray-800 text-[22px] font-semibold">
+                Thsi is test on Design
+              </h2>
+              <!-- <hr class="border-b-2 border-b-gray-400 w-1/12"> -->
+              <hr class="border-gray-600 w-6/12" />
+              <p class="text-gray-800 text-justify pb-4 pt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur, laborum rem! Quos, veritatis laudantium eos dicta
+                magnam mollitia sit officiis. Labore esse asperiores repudiandae
+                ab eos doloremque aliquam, repellendus porro!
+              </p>
+
+              <button
+                class="w-20 text-sm h-10 bg-transparent border-2 border-gray-600 transition ease-in-out duration-500 transform hover:scale-105 rounded hover:text-white hover:bg-indigo-600 p-2 pb-4"
+              >
+                See Here
+              </button>
+            </div>
+          </div>
+
+          <!-- card -->
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-slate-200 bg-no-repeat inset-0 object-cover bg-cover h-full bg-fixed"
+      style="
+        background-image: url('https://fr.davidsuzuki.org/wp-content/uploads/sites/3/2013/05/connecter-nature.jpg');
+      "
+    >
+      <div class="text-center pt-20 pb-20 text-lg">
+        <h2 class="text-gray-700 text-lg">Our Gallery</h2>
+        <hr class="border-gray-800 shadow-lg mt-2 pb-2 w-[50px] mx-auto" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem enim
+        esse laboriosam voluptas tenetur, sed optio iste neque mollitia
+        obcaecati ratione voluptatum perferendis dolores a illo aliquid,
+        repudiandae deleniti aliquam!
+      </div>
+
+      <div class="container mx-auto">
+        <!-- grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -->
+        <div
+          class="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 grid-flow-col gap-4 mb-4"
+        >
+          <!-- box -->
+          <div
+            class="bg-blue-600 rounded text-justify sm:row-span-2 lg:row-span-2 relative overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 object-cover object-center overflow-hidden"
+            >
+              <img
+                src="https://images.pexels.com/photos/13260611/pexels-photo-13260611.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                alt="mauntian"
+                class="w-full"
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-full w-full border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                Shooting Stars
+              </h1>
+              <p class="leading-relaxed">
+                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                microdosing tousled waistcoat.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-blue-600 rounded text-justify relative overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 object-cover bg-center overflow-hidden"
+            >
+              <img
+                src="https://www.cosmeticsdesign-asia.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign-asia.com/article/2019/10/10/why-iso-standards-are-crucial-for-organic-and-natural-transparency-ctfas-president/10238025-1-eng-GB/Why-ISO-standards-are-crucial-for-organic-and-natural-transparency-CTFAS-president.jpg"
+                alt="mauntian"
+                class="w-full"
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-full w-full border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                Shooting Stars
+              </h1>
+              <p class="leading-relaxed">
+                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                microdosing tousled waistcoat.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-blue-600 rounded text-justify relative overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 object-cover object-center overflow-hidden"
+            >
+              <img
+                src="https://assets.entrepreneur.com/content/3x2/2000/unlocking-business-ideas-hidden-natural-world.jpg"
+                alt="mauntian"
+                class="w-full"
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-full w-full border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                Shooting Stars
+              </h1>
+              <p class="leading-relaxed">
+                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                microdosing tousled waistcoat.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-blue-600 rounded text-justify row-span-2 relative overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 object-cover object-center overflow-hidden"
+            >
+              <img
+                src="https://amazingnaturalworld.files.wordpress.com/2014/12/rainforest-river.jpg"
+                alt="mauntian"
+                class="h-full"
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-full w-full border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                Shooting Stars
+              </h1>
+              <p class="leading-relaxed">
+                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                microdosing tousled waistcoat.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-blue-600 rounded text-justify row-span-2 relative overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 object-cover object-center overflow-hidden"
+            >
+              <img
+                src="https://www.pmtoday.co.uk/wp-content/uploads/2020/09/tiger-wildlife-animal.jpg"
+                alt="mauntian"
+                class="h-full"
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-full w-full border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                Shooting Stars
+              </h1>
+              <p class="leading-relaxed">
+                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                microdosing tousled waistcoat.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-blue-600 rounded text-justify relative overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 object-cover object-center overflow-hidden"
+            >
+              <img
+                src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000"
+                alt="mauntian"
+                class="w-full"
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-full w-full border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                Shooting Stars
+              </h1>
+              <p class="leading-relaxed">
+                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                microdosing tousled waistcoat.
+              </p>
+            </div>
+          </div>
+          <!-- box -->
+        </div>
+      </div>
+
+      <!-- gallery -->
+      <div class="container mx-auto overflow-hidden mt-4">
+        <div
+          class="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden gap-4"
+        >
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <div class="absolute inset-0 object-cover object-center">
+              <img
+                src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000"
+                alt="mauntian"
+                class=""
+              />
+            </div>
+            
+            <div
+              class="px-8 py-10 relative z-10 h-full w-full border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                Shooting Stars
+              </h1>
+              <p class="leading-relaxed">
+                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                microdosing tousled waistcoat.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <div class="absolute inset-0 object-cover object-center">
+              <img
+                src="https://live-production.wcms.abc-cdn.net.au/b0d688db39ca3c8d460bbe750704565a?impolicy=wcms_crop_resize&cropH=576&cropW=1023&xPos=0&yPos=0&width=862&height=485"
+                alt="mauntian"
+                class="h-full"
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-[320px] border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+                quibusdam ex exercitationem nisi harum suscipit, optio, nostrum
+                aliquid dolorum asperiores quae? Maiores aliquam nisi hic
+                repellendus omnis quidem animi et?
+              </p>
+            </div>
+          </div>
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <div class="absolute inset-0 object-cover object-center">
+              <img
+                src="https://i.pinimg.com/474x/42/d3/fa/42d3fa4b4dc7fd3e2608dc0fa0bebf7f--bangladesh-natural-beauty.jpg"
+                alt="mauntian"
+                class="h-full"
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-[320px] border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+                quibusdam ex exercitationem nisi harum suscipit, optio, nostrum
+                aliquid dolorum asperiores quae? Maiores aliquam nisi hic
+                repellendus omnis quidem animi et?
+              </p>
+            </div>
+          </div>
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <div class="absolute inset-0 object-cover object-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Natural_Beauty_Natore%2CBangladesh.jpg"
+                alt="mauntian"
+                class="h-full"
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-[320px] border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+                quibusdam ex exercitationem nisi harum suscipit, optio, nostrum
+                aliquid dolorum asperiores quae? Maiores aliquam nisi hic
+                repellendus omnis quidem animi et?
+              </p>
+            </div>
+          </div>
+          <div class="relative mb-4 rounded-lg overflow-hidden">
+            <div class="absolute inset-0 object-cover object-center">
+              <img
+                src="img/640px-Dubai_Marina_Skyline.jpg"
+                alt="mauntian"
+                class=""
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-[320px] border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+                quibusdam ex exercitationem nisi harum suscipit, optio, nostrum
+                aliquid dolorum asperiores quae? Maiores aliquam nisi hic
+                repellendus omnis quidem animi et?
+              </p>
+            </div>
+          </div>
+
+          <div class="relative mb-4 rounded-lg overflow-hidden hasib">
+            <div class="absolute inset-0 object-cover object-center">
+              <img
+                src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000"
+                alt="mauntian"
+                class=""
+              />
+            </div>
+            <div
+              class="px-8 py-10 relative z-10 h-full w-full border-4 border-gray-200 bg-gray-100 opacity-0 hover:opacity-100 transform hover:scale-105 transition duration-500 cursor-pointer"
+            >
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                Shooting Stars
+              </h1>
+              <p class="leading-relaxed">
+                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                microdosing tousled waistcoat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- gallery -->
+    </div>
+
+    <!-- Our Service Start -->
+
+    <div class="bg-gray-600 overflow-hidden">
+      <div class="container mx-auto flex gap-4 justify-between">
+        <!-- cards -->
+        <div class="flex mb-10 mt-10">
+          <div
+            class="bg-zinc-50 p-6 rounded border-r-2 hover:border-gray-400 shadow-2xl transition duration-500 cursor-pointer"
+          >
+            <span>
+              <svg
+                class="text-center mx-auto text-indigo-700"
+                width="24"
+                height="24 "
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"
+                />
+              </svg>
+            </span>
+            <h2 class="text-center pt-2 pb-2">Web Development</h2>
+            <p class="text-justify text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- border -->
+          <!-- <div
+            class="border-r-2 border-indigo-100 h-20 mt-10 ml-5 mr-5"
+          ></div> -->
+          <!-- border -->
+        </div>
+        <div class="flex mb-10 mt-10">
+          <div
+            class="bg-zinc-50 p-6 rounded border-2 hover:border-gray-400 shadow-2xl transition duration-500 cursor-pointer"
+          >
+            <span>
+              <svg
+                class="text-center mx-auto text-indigo-700"
+                width="24"
+                height="24 "
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"
+                />
+              </svg>
+            </span>
+            <h2 class="text-center pt-2 pb-2">Web Development</h2>
+            <p class="text-justify text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- border -->
+          <div class="border-r-2 border-indigo-100 h-20 mt-10 ml-5 mr-5"></div>
+          <!-- border -->
+        </div>
+        <div class="flex mb-10 mt-10">
+          <div
+            class="bg-zinc-50 p-6 rounded border-2 hover:border-gray-400 shadow-2xl transition duration-500 cursor-pointer"
+          >
+            <span>
+              <svg
+                class="text-center mx-auto text-indigo-700"
+                width="24"
+                height="24 "
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"
+                />
+              </svg>
+            </span>
+            <h2 class="text-center pt-2 pb-2">Web Development</h2>
+            <p class="text-justify text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- border -->
+          <div class="border-r-2 border-indigo-100 h-20 mt-10 ml-5 mr-5"></div>
+          <!-- border -->
+        </div>
+        <div class="flex mb-10 mt-10">
+          <div
+            class="bg-zinc-50 p-6 rounded border-2 hover:border-gray-400 shadow-2xl transition duration-500 cursor-pointer"
+          >
+            <span>
+              <svg
+                class="text-center mx-auto text-indigo-700"
+                width="24"
+                height="24 "
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"
+                />
+              </svg>
+            </span>
+            <h2 class="text-center pt-2 pb-2">Web Development</h2>
+            <p class="text-justify text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- border -->
+          <div
+            class="border-r-2 border-indigo-100 h-20 mt-10 last:ml-5 last:mr-5 last:border-none"
+          ></div>
+          <!-- border -->
+        </div>
+
+        <!-- cards -->
+      </div>
+    </div>
+
+    <!-- Our Service End -->
+
+    <div class="bg-white p-6">
+      <div class="container mx-auto">
+        <h2 class="text-center pb-10 font-semibold">Blog List</h2>
+
+        <div
+          class="bg-gray-800 grid grid-rows-1 grid-flow-col mb-4 rounded overflow-hidden"
+        >
+          <div class="row-span-3">
+            <img
+              src="img/06.jpg"
+              alt=""
+              class="h-64 transition duration-500 hover:scale-105"
+            />
+          </div>
+          <div class="text-base col-span-2 bg-gray-100 p-6 h-64">
+            <h2>Mountain</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+              odit necessitatibus corporis libero, nemo vero voluptatum eos
+              porro repellendus fugit, officiis dolores animi voluptate omnis id
+              ea quae nesciunt assumenda?
+            </p>
+
+            <div class="mt-2">
+              <a href="" class="bg-indigo-500 p-2 rounded-lg">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mx-auto border-b-1 border-gray-200 mb-4" />
+
+        <div
+          class="bg-gray-800 grid grid-rows-1 grid-flow-col mb-4 rounded overflow-hidden"
+        >
+          <div class="text-white col-span-2 bg-gray-300 p-6 h-64">
+            <h2>Mountain</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+              odit necessitatibus corporis libero, nemo vero voluptatum eos
+              porro repellendus fugit, officiis dolores animi voluptate omnis id
+              ea quae nesciunt assumenda?
+            </p>
+
+            <div class="mt-2">
+              <a href="" class="bg-indigo-500 p-2 rounded-lg">See More</a>
+            </div>
+          </div>
+          <div class="row-span-3">
+            <img src="img/06.jpg" alt="" class="h-64" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- dropdown menu -->
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
