@@ -1,5 +1,8 @@
 //
 
+
+ new WOW().init()
+
 const all = document.getElementById("all");
 const vector = document.getElementById("vector");
 const raster = document.getElementById("raster");
@@ -13,8 +16,4 @@ const rasterTab = document.getElementsByClassName("raster");
 const uiuxTab = document.getElementsByClassName("uiux");
 const printingTab = document.getElementsByClassName("printing");
 
-all.addEventListener("click", () => {
-    // console.log("click");
-    allTab.classList.remove("show");
-    printingTab.classList.add('show');
-});
+
